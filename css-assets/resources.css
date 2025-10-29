@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    /* Set readable sans-serif font */
+    background: #f5f3ed;
+    /* Light beige background */
+    color: #2d2d2d;
+    /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #a98467, #4e944f, #a98467);
+    color: #fff;
+    /* White text */
+    padding: 1rem;
+    text-align: center;
+    /* Center-align header text */
+}
+
+/* Navigation styles */
+nav {
+    background: #3a5a40;
+    /* Dark green background */
+    display: flex ;
+    /* Flexbox for horizontal layout */
+    justify-content: center;
+    /* Center nav links */
+    gap: 2rem;
+    /* Space between links */
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+    transform: translateY(-5%);
+    /* Slight lift on hover */
+}
+
+/* Main container for content */
+.container {
+    max-width: 75%;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 3%;
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    /* Center section title */
+    margin-bottom: 2rem;
+    /* Space below heading */
+}
+
+/* Resource list container */
+.resources-list {
+    display: flex;
+    /* Flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to next row */
+    gap: 2rem;
+    /* Gap between resources */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+/* Individual resource card */
+.resource {
+    background: #f0ead6;
+    /* Light yellow-beige background */
+    border-radius: 8%;
+    padding: 1.5rem;
+    width: 40%;
+    /* Fixed width */
+    text-align: center;
+}
+
+/* Images inside resource cards */
+.resource img {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 1rem;
+    /* Space below image */
+}
+
+/* Links inside resource cards */
+.resource a {
+    display: block;
+    margin-top: 1rem;
+    color: #4e944f;
+    /* Green link color */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background: #3a5a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ---------------------- */
+/* Responsive adjustments */
+/* ---------------------- */
+@media (max-width: 60rem) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        /* keep nav links in a row */
+        justify-content: space-around;
+        /* spread evenly */
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        /* wrap if too many links */
+    }
+
+    nav a {
+        flex: 1;
+        /* equal space for links */
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .resources-list {
+        flex-direction: column;
+        /* stack resources vertically */
+        align-items: center;
+    }
+
+    .resource {
+        width: 90%;
+        /* take most of container width */
+        max-width: 50%;
+    }
+
+    .resource img {
+        width: 50%;
+        /* slightly smaller images */
+        height: auto;
+    }
+}
+
+/* End of responsive adjustments */

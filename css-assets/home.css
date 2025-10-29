@@ -1,0 +1,187 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f3ed;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section with gradient background */
+header {
+    background: linear-gradient(90deg, #a98467, #4e944f, #a98467);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background: #3a5a40;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: translateY(-5%);
+}
+
+/* Main content container */
+.container {
+    max-width: 75%;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 3%;
+    padding: 2rem;
+}
+
+
+/* Mission section */
+.mission {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.cta-buttons a {
+    background: #4e944f;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.cta-buttons a.donate {
+    background: #a98467;
+}
+
+.cta-buttons:hover {
+    transform: translateY(-5%);
+}
+
+.cta-buttons a:hover {
+    background: #386641;
+}
+
+.cta-buttons a.donate:hover {
+    background: #7c5c3e;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.feature {
+    flex: 1;
+    background: #f0ead6;
+    border-radius: 8%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.feature img {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 1rem;
+}
+
+
+/* Footer */
+footer {
+    background: #3a5a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+    height: 4%;
+    width: 4%;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        /* row layout */
+        justify-content: space-around;
+        /* spread links evenly */
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        /* wrap if too many */
+    }
+
+    nav a {
+        flex: 1;
+        /* equal width */
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons a {
+        width: 80%;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .feature img {
+        width: 50%;
+    }
+
+    img {
+        width: 8%;
+    }
+}

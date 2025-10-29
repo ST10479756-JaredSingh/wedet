@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f3ed;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #a98467, #4e944f, #a98467);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+    background: #3a5a40;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: translateY(-5%);
+}
+
+/* Main content container */
+.container {
+    max-width: 75%;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 3%;
+    padding: 2rem;
+}
+
+/* Section title */
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Event list container */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Individual event card */
+.event {
+    background: #f0ead6;
+    border-radius: 4%;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Event image */
+.event img {
+    width: 15%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/* Event details container */
+.event-details {
+    flex: 1;
+}
+
+/* Event date styling */
+.event-date {
+    font-weight: bold;
+    color: #4e944f;
+    margin-bottom: 0.5rem;
+}
+
+/* Event type badge */
+.event-type {
+    background: #4e944f;
+    color: #fff;
+    border-radius: 3%;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* Footer styling */
+footer {
+    background: #3a5a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* ---------------------- */
+/* Responsive adjustments */
+/* ---------------------- */
+@media (max-width: 60rem) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        /* row layout */
+        justify-content: space-around;
+        /* spread evenly */
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        /* wrap if needed */
+    }
+
+    nav a {
+        flex: 1;
+        /* equal space */
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    .event {
+        flex-direction: column;
+        /* stack content */
+        text-align: center;
+    }
+
+    .event img {
+        width: 60%;
+        /* scale image */
+        height: auto;
+        max-width: 60%;
+    }
+
+    .event-details {
+        text-align: center;
+        /* center details */
+    }
+}
